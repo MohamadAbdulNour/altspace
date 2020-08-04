@@ -1,0 +1,54 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<style>
+    @font-face {
+        font-family: 'vag_rounded_lt_lightregular';
+        src: url('https://altvr-distro.azureedge.net/app/fonts/vagroundedlt-light-webfont.ttf');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+		.transparent{
+			opacity:0.9;
+		}
+
+		body{
+			background-color: rgba(0,0,0,0);
+			padding: 0;
+		}
+
+    .authentication-panel {
+      width: 100%;
+      height: 100%;
+      margin: auto;
+      padding: 0;
+      text-align: center;
+      color: #FFFFFF;
+    }
+
+    .logo {
+      margin: auto;
+      width: 500px;
+      height: 500px;
+    }
+
+    .info-message{
+      margin: auto;
+      font-family: "vag_rounded_lt_lightregular", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      font-size: 50px;
+      color: #eeeeee;
+      margin-top: 40px;
+    }
+
+	</style>
+  <script src="../../react-0.13.1.js"></script> 
+  <script src="view.js"></script>
+</head>
+<body style="margin: 0px;">
+  <div id="AuthenticationView"></div>
+  <script type="text/javascript">
+    //Alt.Util.MountView("Authentication");
+  </script>
+</body>
+</html>

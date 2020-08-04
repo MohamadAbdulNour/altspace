@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" xmlns:uap2="http://schemas.microsoft.com/appx/manifest/uap/windows10/2" xmlns:uap3="http://schemas.microsoft.com/appx/manifest/uap/windows10/3" xmlns:uap4="http://schemas.microsoft.com/appx/manifest/uap/windows10/4" xmlns:uap6="http://schemas.microsoft.com/appx/manifest/uap/windows10/6" xmlns:uap7="http://schemas.microsoft.com/appx/manifest/uap/windows10/7" xmlns:mobile="http://schemas.microsoft.com/appx/manifest/mobile/windows10" xmlns:iot="http://schemas.microsoft.com/appx/manifest/iot/windows10" xmlns:desktop="http://schemas.microsoft.com/appx/manifest/desktop/windows10" xmlns:desktop2="http://schemas.microsoft.com/appx/manifest/desktop/windows10/2" xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities" xmlns:rescap3="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities/3" xmlns:com="http://schemas.microsoft.com/appx/manifest/com/windows10" xmlns:uap5="http://schemas.microsoft.com/appx/manifest/uap/windows10/5" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
+  <Identity Name="Microsoft.AltspaceVR" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" Version="4.0.6.0" ProcessorArchitecture="x64" />
+  <Properties>
+    <DisplayName>AltspaceVR</DisplayName>
+    <PublisherDisplayName>Microsoft Corporation</PublisherDisplayName>
+    <Description>Reserved</Description>
+    <Logo>Icons\icon_300x300.png</Logo>
+  </Properties>
+  <Resources>
+    <Resource Language="en-us" />
+  </Resources>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.17763.0" MaxVersionTested="10.0.17763.0" />
+    <PackageDependency Name="Microsoft.VCLibs.140.00.UWPDesktop" MinVersion="14.0.24217.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+  </Dependencies>
+  <Capabilities>
+    <rescap:Capability Name="runFullTrust" />
+  </Capabilities>
+  <Applications>
+    <Application Id="AltspaceVR" Executable="AltspaceVR.exe" EntryPoint="Windows.FullTrustApplication">
+      <uap:VisualElements DisplayName="AltspaceVR" Description="AltspaceVR" Square150x150Logo="Icons\icon_150x150.png" Square44x44Logo="Icons\icon_44x44.png" BackgroundColor="#18a5aa">
+        <uap:DefaultTile Square310x310Logo="Icons\icon_300x300.png" Wide310x150Logo="Icons\icon_300x300.png" Square71x71Logo="Icons\icon_300x300.png" ShortName="AltspaceVR">
+          <uap5:MixedRealityModel Path="Icons\AltspaceVR.glb" />
+        </uap:DefaultTile>
+      </uap:VisualElements>
+      <Extensions>
+        <uap:Extension Category="windows.protocol">
+          <uap:Protocol Name="altspace">
+            <uap:Logo>Icons\icon_300x300.png</uap:Logo>
+            <uap:DisplayName>AltspaceVR</uap:DisplayName>
+          </uap:Protocol>
+        </uap:Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+  <mp:PhoneIdentity PhoneProductId="42f0378c-c2ac-40b9-a637-86c3af6532ae" PhonePublisherId="95d94207-0c7c-47ed-82db-d75c81153c35" />
+</Package>
